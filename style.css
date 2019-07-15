@@ -5,7 +5,9 @@ header{
 	background-color: transparent;
 	background-size: 100%;
 }
-
+body{
+	height:100%;
+}
 .nagivation{
 	display: inline-block;
 	width:100%;
@@ -125,4 +127,10 @@ footer li {
 
 	float:left;
 	display: flex;
+}
+.skillpart{
+	
+	width:33%;
+	margin-bottom: 20px;
+line-height: 1.8;
 }
