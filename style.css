@@ -64,4 +64,8 @@ section{
 	margin-right: auto;
 	margin-top: 2em; 
 	background-color:aliceblue;
+	    display: flex;
+}
+.project {
+    width: 33%;
 }
