@@ -9,7 +9,8 @@ header{
 .nagivation{
 	display: inline-block;
 	width:100%;
-	padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 	font-family: cursive;
 	border-bottom: inset;
 	border-color: rgba(255, 255, 255, 0.3);
@@ -38,7 +39,11 @@ h1{
 	font-size:70px;
     margin-bottom: -10px;
 }
-
+a{
+	font-family: "Roboto", "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
 .intropart {
 	display: inline-block;
 	width: 100%;
@@ -52,4 +57,8 @@ h1{
 	color: white;
 	padding: 2rem 0;
 	clear: both;
+}
+section{
+	
+	background-color:light-blue;
 }
