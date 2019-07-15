@@ -66,6 +66,7 @@ section{
 	margin-right: auto;
 	margin-top: 2em; 
 	display: flex;
+	border-bottom: groove;
 }
 .project {
       width: 50%;
@@ -97,4 +98,14 @@ section{
 }
 a.project-title.more {
     font-size: 15px;
+}
+.has-label{
+	list-style-type: none;
+	padding: 0.55rem 0;
+	line-height: 1.8;
+}
+footer{
+	
+	background-color: black;
+	height:60px;
 }
