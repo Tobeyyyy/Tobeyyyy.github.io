@@ -105,7 +105,24 @@ a.project-title.more {
 	line-height: 1.8;
 }
 footer{
-	
+	font-color:white;
 	background-color: black;
 	height:60px;
+}
+footer ul {
+    list-style-type: none;
+
+}
+footer li {
+    margin-right:8px;
+	color:white;
+}
+.footer-right{
+
+	float:right;
+}
+.footer-left{
+
+	float:left;
+	display: flex;
 }
