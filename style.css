@@ -59,6 +59,9 @@ a{
 	clear: both;
 }
 section{
-	
-	background-color:light-blue;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em; 
+	background-color:aliceblue;
 }
