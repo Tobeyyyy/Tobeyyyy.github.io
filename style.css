@@ -34,6 +34,10 @@ ul.nagivation-primary {
 h1,h2,a{
 	color: white;
 }
+h1{
+	font-size:70px;
+    margin-bottom: -10px;
+}
 
 .intropart {
 	display: inline-block;
