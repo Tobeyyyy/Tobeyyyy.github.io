@@ -70,3 +70,20 @@ section{
     width: 33%;
 	overflow: hidden;
 }
+.project-image{
+	
+	width:100%;
+}
+.project-title{
+	text-decoration: none;color: #51748e;  
+	font-family: 'Playfair Display', sans-serif; 
+	font-size: 1.5em;  
+	font-weight: bold;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+	
+}
+.project-descrip{
+	font-family: "Roboto", sans-serif;
+	
+}
