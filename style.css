@@ -47,6 +47,8 @@ a{
 .intropart {
 	display: inline-block;
 	width: 100%;
+	margin-bottom: 50px;
+
 }
 
 .intropart-inner{
@@ -66,8 +68,9 @@ section{
 	display: flex;
 }
 .project {
-    width: 33%;
-	overflow: hidden;
+      width: 50%;
+    overflow: hidden;
+    margin: 10px;
 }
 .project-image{
 	margin-bottom: 15px;
