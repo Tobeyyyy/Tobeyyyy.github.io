@@ -24,7 +24,6 @@ a.getresume:hover{
 .nagivation{
 	display: inline-block;
 	width:100%;
-    padding-top: 10px;
     padding-bottom: 10px;
 	font-family: cursive;
 	border-bottom: inset;
@@ -39,7 +38,9 @@ a.getresume:hover{
 	font-size: 20px;
 }
 li.nagivation-item {
-	width: 20%;
+	width:18%;
+	text-align	: center;
+	    border-top: solid transparent;
 }
 
 ul.nagivation-primary {
@@ -189,6 +190,10 @@ div.slide-right{
 div.slide-right div.project {
   animation: slide-right 3s;
 
+}
+li.nagivation-item:hover{
+	
+	border-top: solid;
 }
 
 @keyframes slide-right {
