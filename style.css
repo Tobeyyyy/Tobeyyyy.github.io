@@ -24,8 +24,8 @@ a.getresume:hover{
 .nagivation{
 	display: inline-block;
 	width:100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 	font-family: cursive;
 	border-bottom: inset;
 	border-color: rgba(255, 255, 255, 0.3);
@@ -63,7 +63,7 @@ a{
 .intropart {
 	display: inline-block;
 	width: 100%;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 
 }
 
@@ -80,7 +80,7 @@ section{
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 2em; 
+	margin-top: 1em; 
 	display: flex;
 	border-bottom: groove;
 }
@@ -157,11 +157,14 @@ footer li {
 	display: flex;
 	display: flex;
 }
-.skillpart{
-	
+.skillpart{	
 	width:33%;
 	margin-bottom: 20px;
-line-height: 1.8;
+	line-height: 1.8;
+	animation-name: fadeInAnimation;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
 }
 
 /*netsuite project page*/
@@ -187,11 +190,20 @@ div.slide-right div.project {
   animation: slide-right 3s;
 
 }
+
 @keyframes slide-right {
   from {
     margin-left: -75%;
   }
   to {
     margin-left: 0%;
+  }
+}
+@keyframes fadeInAnimation  {
+  from {
+   opacity:0;
+  }
+  to {
+   opacity:1;
   }
 }
