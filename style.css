@@ -138,10 +138,14 @@ footer li {
     margin-right:20px;
 	color:white;
 }
-.footer-left li:hover,.footer-right:hover{
+.footer-left li:hover{
 	   /* font-size: 20px;*/
 		transform:perspective(1px) translateZ(0);
 		box-shadow:0 0 22px rgba(200, 98, 98, 0.61)
+}
+.footer-right:hover{
+	 -webkit-transform: rotateZ(-10deg);
+     transform: rotateZ(-10deg);
 }
 .footer-right{
 
@@ -150,6 +154,7 @@ footer li {
 .footer-left{
 
 	float:left;
+	display: flex;
 	display: flex;
 }
 .skillpart{
