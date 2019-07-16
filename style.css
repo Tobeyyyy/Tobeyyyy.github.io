@@ -167,7 +167,12 @@ footer li {
 	animation-timing-function: ease-in;
 	animation-duration: 2s;
 }
-
+.button-to-top{
+	float:right;
+	animation:bouncy 5s infinite linear;
+position:relative;
+	
+}
 /*netsuite project page*/
 .program-descrip{
 		margin-top:25px;
@@ -177,18 +182,21 @@ footer li {
 	
 	margin-top:25px;
 }
-a.myemail:hover{
-margin-left: 10px;
-
-}
-
 div.slide-right{
   width:100%;
   overflow:hidden;
   display: contents;
 }
+
+a.myemail:hover{
+margin-left: 10px;
+
+}
+
+
 div.slide-right div.project {
-  animation: slide-right 3s;
+  animation: slide-right 5s;
+
 
 }
 li.nagivation-item:hover{
@@ -197,11 +205,21 @@ li.nagivation-item:hover{
 }
 
 @keyframes slide-right {
-  from {
-    margin-left: -75%;
+  0% {
+     margin-left: -75%;
+	   opacity:0;
   }
-  to {
+  50% {
+    opacity:0.5;
+	
+  }
+  75%{
+	   opacity:0.8;
+  }
+  100%
+  {
     margin-left: 0%;
+	 opacity:1;
   }
 }
 @keyframes fadeInAnimation  {
