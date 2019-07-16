@@ -177,3 +177,21 @@ a.myemail:hover{
 margin-left: 10px;
 
 }
+
+div.slide-right{
+  width:100%;
+  overflow:hidden;
+  display: contents;
+}
+div.slide-right div.project {
+  animation: slide-right 3s;
+
+}
+@keyframes slide-right {
+  from {
+    margin-left: -75%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
