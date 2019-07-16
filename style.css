@@ -173,3 +173,9 @@ line-height: 1.8;
 	
 	margin-top:25px;
 }
+a.myemail:hover{
+color:red;
+}
+a.myemail{
+	color:cornflowerblue;
+}
