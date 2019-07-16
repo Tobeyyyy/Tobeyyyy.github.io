@@ -10,6 +10,17 @@ header{
 body{
 	height:100%;
 }
+a.getresume:after {
+    content: ' \25b6';
+    font-size: .7rem;
+    position: relative;
+    -webkit-transition: 75ms ease-in-out padding;
+    transition: 75ms ease-in-out padding;
+}
+a.getresume:hover{
+	padding-left: 5px;
+}
+
 .nagivation{
 	display: inline-block;
 	width:100%;
@@ -93,6 +104,10 @@ section{
     text-rendering: optimizeLegibility;
 	
 }
+a.project-title:hover{
+  
+	color: lightblue;
+}
 .project-descrip{
 	font-family: "Roboto", sans-serif;
 	margin: 0 !important;
@@ -120,8 +135,13 @@ footer ul {
 
 }
 footer li {
-    margin-right:8px;
+    margin-right:20px;
 	color:white;
+}
+.footer-left li:hover,.footer-right:hover{
+	   /* font-size: 20px;*/
+		transform:perspective(1px) translateZ(0);
+		box-shadow:0 0 22px rgba(200, 98, 98, 0.61)
 }
 .footer-right{
 
