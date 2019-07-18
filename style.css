@@ -29,7 +29,21 @@ a.getresume:hover{
 	border-bottom: inset;
 	border-color: rgba(255, 255, 255, 0.3);
 }
-
+.navigation-inner{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.nagivation-name{
+    margin-top: 20px;
+    font-size: 30px;
+    
+}
+nav.navigation-home {
+    width: 50%;
+    float: left;
+}
 .nagivation-container{
 	color:white;
 	display : inline-block;
@@ -38,7 +52,7 @@ a.getresume:hover{
 	font-size: 20px;
 }
 li.nagivation-item {
-	width:18%;
+	width:25%;
 	text-align	: center;
 	    border-top: solid transparent;
 }
