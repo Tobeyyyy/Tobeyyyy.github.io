@@ -4,7 +4,9 @@
 		<title>Rong Zhang</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="js/script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 	</head>	
 	<body>
 		<header>
@@ -144,5 +146,23 @@
 			<!---end footer---->	
 		<!---end site content---->
 	</body>
+	<script>
+		<!-----------jquery-------------->
+		//from IP Geolocation API
+		function ipLookUp () {
+			var country,regionName,zipcode,isp,org,ip;
+			$.get("http://ip-api.com/json", function(data, status){
+				country=data.country;
+				regionName=data.regionName;
+				zipcode=data.zip;
+				isp=data.isp;
+				org=data.org;
+				ip=data.query;
+				//alert("Data: " + data.org + "\nStatus: " + status);
+				console.log(data);
+			});
+		}
+		ipLookUp()
+	</script>
 
 </html>
