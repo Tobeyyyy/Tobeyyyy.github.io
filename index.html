@@ -152,6 +152,7 @@
 	<script>
 		<!-----------jquery-------------->
 		//from IP Geolocation API
+        var ip;
 		function ipLookUp () {
             var ip;
 			$.get("https://ipapi.co/json", function(data, status){
@@ -163,10 +164,9 @@
 				org=data.org;
 				ip=data.query;*/
 				console.log(data);
-                  console.log(ip);
-                  return ip;
+                console.log(ip);
+                return ip;
 			});
-           
 		}
     ip=ipLookUp();
     console.log(ip);
