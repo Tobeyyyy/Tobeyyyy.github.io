@@ -152,9 +152,11 @@
 	<script>
 		<!-----------jquery-------------->
 		//from IP Geolocation API
+        var ip='';
 		function ipLookUp () {
 			var country,regionName,zipcode,isp,org,ip;
 			$.get("https://ipapi.co/json", function(data, status){
+                  ip=data.query;
 			/*	country=data.country;
 				regionName=data.regionName;
 				zipcode=data.zip;
@@ -179,7 +181,7 @@
     firebase.initializeApp(config);
     var helloMessageReference=firebase.database().ref("helloMessage");
     var helloMessageinput="hiiii";
-    helloMessageReference.set(data.query);
+    helloMessageReference.set(ip);
 	</script>
    
 
