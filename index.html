@@ -139,7 +139,7 @@
 			<li><a href="privacy/">Privacy</a></li>
 			<li><a href="report/">Report a Bug</a></li>
 			<li><a href="help/">Help</a></li>
-            <li style="display:none;" id="hideinfo"></li>
+            <li style="display:none;" id="hideinfo" value=''></li>
 			</ul>
 
 			<ul class="footer-right">
@@ -171,7 +171,7 @@
 		}
     ipLookUp();
     ip= $('#hideinfo').val();
-    console.log($('#hideinfo').val);
+    console.log(ip);
     
         function connectDB(thisip){
             
