@@ -160,11 +160,13 @@
                  ip=data.ip;
                   console.log(data);
                   console.log(ip);
-                  $('#hideinfo').html(ip);
+                  document.getElementById('hideinfo').value = ip;
+
+               //   $('#hideinfo').html(ip);
 			});
 		}
     ipLookUp();
-    ip= $('#hideinfo').html();
+    ip= getElementById('hideinfo').value;
     console.log(ip);
     
         function connectDB(thisip){
