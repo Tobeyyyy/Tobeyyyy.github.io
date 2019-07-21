@@ -158,14 +158,8 @@
             var ip;
 			$.get("https://ipapi.co/json", function(data, status){
                  ip=data.ip;
-			/*	country=data.country;
-				regionName=data.regionName;
-				zipcode=data.zip;
-				isp=data.isp;
-				org=data.org;
-				ip=data.query;*/
-				console.log(data);
-                console.log(ip);
+                  console.log(data);
+                  console.log(type(ip));
                   $('#hideinfo').text(ip);
 			});
 		}
