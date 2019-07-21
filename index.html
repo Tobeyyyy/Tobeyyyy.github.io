@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="js/script.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 	</head>	
@@ -147,6 +148,7 @@
 			<!---end footer---->	
 		<!---end site content---->
 	</body>
+     <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
 	<script>
 		<!-----------jquery-------------->
 		//from IP Geolocation API
@@ -164,6 +166,21 @@
 			});
 		}
 		ipLookUp()
+        //initialize firebase
+        var config={
+            
+            apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
+            authDomain:"tobeyyyy-github.firebaseio.com",
+            databaseURL:"https://tobeyyyy-github.firebaseio.com",
+            projectId:"tobeyyyy-github",
+            storageBucket:"tobeyyyy-github.appspot.com",
+            messagingSenderId:"600571938704"
+        }
+    firebase.initializeApp(config);
+    var helloMessageReference=firebase.database().ref("helloMessage");
+    var helloMessageinput="hiiii";
+    helloMessageReference.set(helloMessageinput);
 	</script>
+   
 
 </html>
