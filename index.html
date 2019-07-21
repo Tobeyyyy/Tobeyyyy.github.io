@@ -156,7 +156,7 @@
 		function ipLookUp () {
 			var country,regionName,zipcode,isp,org,ip;
 			$.get("https://ipapi.co/json", function(data, status){
-                //  ip=data.query;
+                 ip=data.ip;
 			/*	country=data.country;
 				regionName=data.regionName;
 				zipcode=data.zip;
@@ -166,8 +166,8 @@
 				//alert("Data: " + data.org + "\nStatus: " + status);
 				console.log(data);
 			});
-            console.log(data.ip);
-            return data.ip;
+            console.log(ip);
+            return ip;
 		}
     ip=ipLookUp();
     console.log(ip);
