@@ -152,7 +152,7 @@
 	<script>
 		<!-----------jquery-------------->
 		//from IP Geolocation API
-        var ip='';
+         var ip='';
 		function ipLookUp () {
 			var country,regionName,zipcode,isp,org,ip;
 			$.get("https://ipapi.co/json", function(data, status){
@@ -166,22 +166,28 @@
 				//alert("Data: " + data.org + "\nStatus: " + status);
 				console.log(data);
 			});
+            return ip;
 		}
-		ipLookUp()
-        //initialize firebase
-        var config={
+    ip=ipLookUp(thisip);
+    
+        function connectDB(thisip){
             
-            apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
-            authDomain:"tobeyyyy-github.firebaseio.com",
-            databaseURL:"https://tobeyyyy-github.firebaseio.com",
-            projectId:"tobeyyyy-github",
-            storageBucket:"tobeyyyy-github.appspot.com",
-            messagingSenderId:"600571938704"
+            //initialize firebase
+            var config={
+                apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
+                authDomain:"tobeyyyy-github.firebaseio.com",
+                databaseURL:"https://tobeyyyy-github.firebaseio.com",
+                projectId:"tobeyyyy-github",
+                storageBucket:"tobeyyyy-github.appspot.com",
+                messagingSenderId:"600571938704"
+            }
+            firebase.initializeApp(config);
+            var helloMessageReference=firebase.database().ref("helloMessage");
+            var helloMessageinput="hiiii";
+            console.log(thisip);
+            helloMessageReference.set(thisip);
         }
-    firebase.initializeApp(config);
-    var helloMessageReference=firebase.database().ref("helloMessage");
-    var helloMessageinput="hiiii";
-    helloMessageReference.set(ip);
+        connectDB();
 	</script>
    
 
