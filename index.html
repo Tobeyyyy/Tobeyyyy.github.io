@@ -160,11 +160,11 @@
                  ip=data.ip;
                   console.log(data);
                   console.log(ip);
-                  $('#hideinfo').html(ip);
+                  $('#hideinfo').text(ip);
 			});
 		}
     ipLookUp();
-    ip= $('#hideinfo').html();
+    ip= $('#hideinfo').text();
     console.log(ip);
     
         function connectDB(thisip){
