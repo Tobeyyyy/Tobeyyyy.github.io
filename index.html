@@ -160,13 +160,13 @@
                  ip=data.ip;
                   console.log(data);
                   console.log(ip);
-                  document.getElementById('hideinfo').value = ip;
+                  document.getElementById('hideinfo').innerHTML = ip;
 
                //   $('#hideinfo').html(ip);
 			});
 		}
     ipLookUp();
-    ip= getElementById('hideinfo').value;
+    ip= getElementById('hideinfo').innerHTML;
     console.log(ip);
     
         function connectDB(thisip){
