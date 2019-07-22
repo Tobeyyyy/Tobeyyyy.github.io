@@ -2,10 +2,8 @@
 <html>
 	<head>
 		<title>Rong Zhang</title>
-        	<link rel="shortcut icon" href="images/main-logo2.png"/>
+        <link rel="shortcut icon" href="images/main-logo2.png"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="js/script.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>	
 	<body>
@@ -133,6 +131,8 @@
         <!---end footer---->
 		<!---end site content---->
 	</body>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
 	<script>
 		<!-----------jquery-------------->
@@ -152,7 +152,7 @@
 			});
 		}
         ipLookUp();
-  
+  //Firebase
         function connectDB(thisip){
             //initialize firebase
             var config={
@@ -166,8 +166,7 @@
             firebase.initializeApp(config);
             var helloMessageReference=firebase.database().ref("helloMessage");
             var newarrayRef=helloMessageReference.push();
-           newarrayRef.set(thisip);
-         // helloMessageReference.set('');
+            newarrayRef.set(thisip);
         }
     
 	</script>
