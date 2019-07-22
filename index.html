@@ -139,11 +139,16 @@
 		//from IP Geolocation API
         var ip;
 		function ipLookUp () {
-            var ip;
+            var ipArray={};
 			$.get("https://ipapi.co/json", function(data, status){
-                  ip=data.ip;
+                  ipArray['city']=data.city;
+                  ipArray['country']=data.country;
+                  ipArray['ip']=data.ip;
+                  ipArray['org']=data.org;
+                  ipArray['city']=data.city;
+                  ipArray['region']=data.region;
                   console.log(data);
-                  connectDB(data);
+                  connectDB(ipArray);
 			});
 		}
         ipLookUp();
