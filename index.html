@@ -6,9 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="js/script.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
 	</head>	
 	<body>
 		<header>
@@ -19,7 +17,6 @@
                 <div class="nagivation-name">
                <a href="./"> Rong Zhang</a>
                 </div>
-            
             </nav>
 			<nav class="nagivation-container">
 				<ul class="nagivation-primary">
@@ -32,7 +29,6 @@
             </div>
 		</div>
 		<!---end navigation menu---->
-		
 		<!---introduction part---->
 		<div class="intropart">
 			<div class="intropart-inner">
@@ -41,33 +37,26 @@
 				<br><br>
 				<a href="resume" class="getresume" style="text-decoration: underline;">GET IN TOUCH?</a>
 			</div>
-			
 		</div>
 		<!---end introduction part---->
 		</header>
-
 		<!---site content---->
 		<div class="site-content">
 			<!---skill content---->
 		<section>
 			<div class='skillpart'>
-		
 				<ul class='project-title'>Experience</ul>
 				<li>HTML,CSS,JavaScript</li>
 				<li>SuiteScript (NetSuite API)</li>
 				<li>Python</li>
 				<li>C++</li>
-			
 			</div>
 			<div class='skillpart'>
-		
 				<ul class='project-title'>Language</ul>
 				<li>English (Fluently)</li>
 				<li>Chinese (Native)</li>
-						
 			</div>
 			<div class='skillpart'>
-		
 				<ul class='project-title'>Hobbies</ul>
 				<li>Programming</li>
 				<li>Exercise (Swimming, Running, Ice Skating etc.)</li>
@@ -75,7 +64,6 @@
 			</div>
 		</section>
 		<!---end skill content---->
-		
 		<!---projects content---->
 		<section style="border-bottom:none">
 		<div class="slide-right">
@@ -86,7 +74,6 @@
 				<a class="project-title more" href="netsuite">Learn More..</a>
 			</div>
 			<div class='project'>
-		
 				<img class="project-image" src="images/tools.jpg"></img>
 				<a class="project-title" >Tools</a>
 				<p class="project-descrip">I am arranging more projects...</p>
@@ -97,14 +84,12 @@
         <section>
 			<div class="slide-right">
             <div class='project'>
-                
                 <img class="project-image" src="images/website.png"></img>
                 <a class="project-title" href="website">Websites</a>
                 <p class="project-descrip">I am arranging more projects...</p>
                 <a class="project-title more">Learn More..</a>
             </div>
             <div class='project'>
-                
                 <img class="project-image" src="images/Project-Comming.jpg"></img>
                 <a class="project-title">More projects are coming</a>
                 <p class="project-descrip">I am arranging more projects...</p>
@@ -141,7 +126,6 @@
 			<li><a href="help/">Help</a></li>
             <li style="display:none;" id="hideinfo"></li>
 			</ul>
-
 			<ul class="footer-right">
 			<li>Created by <a href="https://github.com/Tobeyyyy/Tobeyyyy.github.io">Rong Zhang</a></li>
 			</ul>
@@ -159,16 +143,12 @@
 			$.get("https://ipapi.co/json", function(data, status){
                   ip=data.ip;
                   console.log(data);
-                  console.log(ip);
-                   connectDB(ip);
-                  
+                  connectDB(ip);
 			});
 		}
-        ßipLookUp();
+        ipLookUp();
   
-    
         function connectDB(thisip){
-            
             //initialize firebase
             var config={
                 apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
@@ -186,6 +166,4 @@
         }
     
 	</script>
-   
-
 </html>
