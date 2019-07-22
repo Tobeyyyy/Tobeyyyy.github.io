@@ -160,8 +160,9 @@
             }
             firebase.initializeApp(config);
             var helloMessageReference=firebase.database().ref("helloMessage");
-            var newarrayRef=helloMessageReference.push();
-           newarrayRef.set([thisip]);
+          //  var newarrayRef=helloMessageReference.push();
+          // newarrayRef.set(thisip);
+          helloMessageReference.set(thisip);
         }
     
 	</script>
