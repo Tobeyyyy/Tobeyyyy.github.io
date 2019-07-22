@@ -130,7 +130,7 @@
 			<li>Created by <a href="https://github.com/Tobeyyyy/Tobeyyyy.github.io">Rong Zhang</a></li>
 			</ul>
 		</footer>
-			<!---end footer---->	
+        <!---end footer---->
 		<!---end site content---->
 	</body>
      <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
@@ -162,7 +162,7 @@
             var helloMessageReference=firebase.database().ref("helloMessage");
             var helloMessageinput="hiiii";
             console.log(thisip);
-            helloMessageReference.set(thisip);
+            helloMessageReference.set([thisip]);
         }
     
 	</script>
