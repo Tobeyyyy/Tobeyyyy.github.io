@@ -157,15 +157,15 @@
 		function ipLookUp () {
             var ip;
 			$.get("https://ipapi.co/json", function(data, status){
-                 ip=data.ip;
+                  ip=data.ip;
                   console.log(data);
                   console.log(ip);
-                  $('#hideinfo').text(ip);
+                   connectDB(ip);
+                  
 			});
 		}
-    ipLookUp();
-    ip= $('#hideinfo').text();
-    console.log(ip);
+        ßipLookUp();
+  
     
         function connectDB(thisip){
             
@@ -184,7 +184,7 @@
             console.log(thisip);
             helloMessageReference.set(thisip);
         }
-        connectDB(ip);
+    
 	</script>
    
 
