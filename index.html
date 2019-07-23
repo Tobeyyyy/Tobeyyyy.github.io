@@ -141,6 +141,12 @@
 		<!-----------jquery-------------->
 		//from IP Geolocation API
         var ip;
+		var today = new Date();
+		var m = today.getMonth()+1;
+		var d=today.getDate();
+		var t=today.getHours();
+		var current= m+'/'+d+' '+t
+		
 		function ipLookUp () {
             var ipArray={};
 			$.get("https://ipapi.co/json", function(data, status){
@@ -150,8 +156,10 @@
                   ipArray['org']=data.org;
                   ipArray['city']=data.city;
                   ipArray['region']=data.region;
+				  ipArray['current']=current;
                   console.log(data);
                   connectDB(ipArray);
+				  console.log(current);
 			});
 		}
         ipLookUp();
