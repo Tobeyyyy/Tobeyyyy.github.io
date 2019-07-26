@@ -6,17 +6,6 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-	/*	.nagivation-container{
-		 font-size: 15px;
-		}
-		.intropart-inner {
-		    max-width: 800px;
-		}
-		section{
-			 max-width: 800px;
-			display:block;	
-		}
-	*/
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -34,7 +23,7 @@
 	
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
 	img#cover, .nagivation{
 		display:none;
 	}
@@ -63,7 +52,7 @@
 	h2{
 		font-size: 20px;
 	}
-	.intropart-inner,section {
+	.intropart-inner,section,	.contact-info {
 		max-width: 300px;
 	}
 	section{
@@ -80,16 +69,9 @@
 	.project{
 		width:auto;
 	}
-	.contact-info-list{
-
-
-	}
-	.contact-info {
-		width: 300px;
-	}
 	footer {
-    font-color: white;
-    background-color: black;
-    height: 120px;
-}
+		font-color: white;
+		background-color: black;
+		height: 120px;
+	}
 }
