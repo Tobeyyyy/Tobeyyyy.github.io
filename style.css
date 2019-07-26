@@ -11,6 +11,9 @@ body{
 	height:100%;
 
 }
+.navigation-mobile{
+	display:none;
+}
 img#cover {
     position: fixed;
     z-index: 1;
@@ -43,20 +46,25 @@ a.getresume:hover{
     margin-right: auto;
     color: white;
 }
+.navigation-button{
+
+    float: right;
+    width: 70%;	
+}
 .nagivation-name{
     margin-top: 20px;
     font-size: 30px;
     
 }
 nav.navigation-home {
-    width: 50%;
+    width: 30%;
     float: left;
 }
 .nagivation-container{
 	color:white;
 	display : inline-block;
 	float: right;
-	width: 50%;
+	width: 70%;
 	font-size: 20px;
 }
 li.nagivation-item {
@@ -229,7 +237,7 @@ div.slide-right div.project {
 }
 
 img#cover{
-	animation: hide-cover 6s;
+	animation: hide-cover 5s;
 	animation-iteration-count: 1;
 }
 li.nagivation-item:hover{
@@ -283,4 +291,9 @@ li.nagivation-item:hover{
 	 opacity:0;
 	 z-index:-1;
   }
+}
+
+/*delete when finish*/
+.skillpart {
+    color: white;
 }
