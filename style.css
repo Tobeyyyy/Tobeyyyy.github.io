@@ -204,6 +204,14 @@ position:relative;
 	
 	margin-top:25px;
 }
+
+.website-link{
+	
+	color:red;
+}
+.website-link:hover{
+	color: blue;
+}
 div.slide-right{
   width:100%;
   overflow:hidden;
