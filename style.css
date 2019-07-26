@@ -222,6 +222,7 @@ div.slide-right div.project {
 
 img#cover{
 	animation: hide-cover 6s;
+	animation-iteration-count: 1;
 }
 li.nagivation-item:hover{
 	
