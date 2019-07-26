@@ -52,11 +52,13 @@
 	h2{
 		font-size: 20px;
 	}
-	.intropart-inner,section,	.contact-info {
-		max-width: 300px;
+	.intropart-inner,section,.contact-info,.navigation-mobile-content {
+		max-width: 350px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 	section{
-		display: table;
+	display: contents;
 		margin-top: auto;
 	}
 	.skillpart {
@@ -74,4 +76,7 @@
 		background-color: black;
 		height: 120px;
 	}
+	ul.contact-info-list {
+    margin-left: -50px;
+}
 }
