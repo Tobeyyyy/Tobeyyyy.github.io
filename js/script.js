@@ -7,5 +7,6 @@ window.onbeforeunload;//return to top when refresh page
 setTimeout(function(){
     //do what you need here
 	$('img#cover').css('opacity','0');
+	$('img#cover').css('index','-1');
 }, 5000);
 
