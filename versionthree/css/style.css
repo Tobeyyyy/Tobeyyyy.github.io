@@ -62,6 +62,7 @@ section#home,section#aboutme {
 p.hello {
     margin-top: 100px;
 }
+
 .right-content-inner, .left-content-inner {
     text-align: center;
     padding: 50px;
@@ -83,6 +84,15 @@ img#cover {
     z-index: 1;
     width: 100%;
     overflow: hidden;
+}
+
+ul.language-skill {
+    list-style-type: none;
+    display: flex;
+}
+ul.language-skill li{
+	    border: 1px solid lightblue;
+    margin-left: 20px;
 }
 
 a.getresume:after {
@@ -193,6 +203,7 @@ a.project-title:hover{
 	height: 60px;
 	
 }
+
 a.project-title.more {
     font-size: 15px;
 }
