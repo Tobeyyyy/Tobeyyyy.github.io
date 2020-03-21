@@ -108,6 +108,10 @@ ul.language-skill li{
 }
 .portfolio-project{
 	width:33%;
+	overflow:hidden;
+}
+.portfolio-project img{
+	width:90%;
 }
 a.getresume:after {
     content: ' \25b6';
