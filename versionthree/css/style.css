@@ -254,9 +254,8 @@ footer li {
 	color:white;
 }
 .footer-left li:hover{
-	/* font-size: 20px;*/
-	transform:perspective(1px) translateZ(0);
-	box-shadow:0 0 22px rgba(200, 98, 98, 0.61)
+	transform: perspective(1px) translateZ(0);
+    box-shadow: 3px 6px 17px 5px rgb(89, 218, 247);
 }
 .footer-right:hover{
 	-webkit-transform: rotateZ(-10deg);
