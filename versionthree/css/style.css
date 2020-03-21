@@ -23,6 +23,7 @@ body{
 }
 .navigation-inner ,.intropart,.contact-info,.down-site-content{
     max-width: 90%;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
 }
