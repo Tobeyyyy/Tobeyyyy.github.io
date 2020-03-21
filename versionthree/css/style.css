@@ -99,10 +99,7 @@ ul.language-skill li{
     font-weight: 700;
     padding: 5px;
 }
-.content-inner {
-    width: 90%;
-    margin-left: 5%;
-}
+
 .portfolio-content{
 	display: inline-flex;
 	    max-width: 90%;
