@@ -52,7 +52,7 @@ section#home {
     border-radius: 100%;
     text-align: center;
 }
-.right-content-inner ,.left-content-inner {
+.right-content-inner, .left-content-inner {
     text-align: center;
     padding: 50px;
 }
