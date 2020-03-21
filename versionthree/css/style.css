@@ -106,6 +106,9 @@ ul.language-skill li{
     overflow: hidden;
     text-align: center;
 }
+.portfolio-project{
+	width:33%;
+}
 a.getresume:after {
     content: ' \25b6';
     font-size: .7rem;
