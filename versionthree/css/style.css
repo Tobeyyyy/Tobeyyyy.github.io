@@ -46,9 +46,12 @@ section#home {
     width: 50%;
     float:right;
 }
-
+.left-content-inner {
+    height: 400px;
+}
 .right-content-inner img {
     width: 400px;
+     height: 400px;
     border-radius: 100%;
     text-align: center;
 }
