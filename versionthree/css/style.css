@@ -111,7 +111,7 @@ ul.language-skill li{
 	overflow:hidden;
 }
 .portfolio-project img{
-	width:90%;
+	width:95%;
 }
 a.getresume:after {
     content: ' \25b6';
@@ -161,7 +161,7 @@ ul.nagivation-primary {
 
 
 h1{   
-	 font-size: 70px;
+	 font-size: 40px;
     margin-bottom: -10px;
     text-align: center;
     margin-top: 100px;
