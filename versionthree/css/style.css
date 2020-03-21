@@ -62,7 +62,9 @@ img.profile-image {
 p.hello {
     margin-top: 100px;
 }
-
+.left-content-inner p a {
+    color: black;
+}
 .right-content-inner, .left-content-inner {
     text-align: center;
     padding: 50px;
