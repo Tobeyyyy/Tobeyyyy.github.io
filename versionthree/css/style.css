@@ -14,6 +14,9 @@ header{
 body{
 	height:100%;
 }
+.nagivation-name img {
+    width: 50px;
+}
 .nagivation,.contact-section,.site-content,section#aboutme{
 	width:100%;
 	display: inline-block;
