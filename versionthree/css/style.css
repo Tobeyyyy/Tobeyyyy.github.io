@@ -150,10 +150,12 @@ ul.nagivation-primary {
 }
 
 
-h1{
-	font-size:70px;
+h1{   
+	 font-size: 70px;
     margin-bottom: -10px;
+    text-align: center;
     margin-top: 100px;
+
 }
 
 a{
