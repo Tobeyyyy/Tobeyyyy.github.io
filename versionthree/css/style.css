@@ -102,9 +102,9 @@ ul.language-skill li{
 
 .portfolio-content{
 	display: inline-flex;
-	 /*   max-width: 90%;
+	    max-width:100%;
     overflow: hidden;
-    text-align: center;*/
+    text-align: center;
 }
 a.getresume:after {
     content: ' \25b6';
