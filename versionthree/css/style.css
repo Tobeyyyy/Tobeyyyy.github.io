@@ -69,21 +69,22 @@ a.getresume:hover{
 }
 .navigation-button{
     float: right;
-    width: 70%;	
+    width: 90%;	
+}
+li.nagivation-item a:hover{
+	border-bottom: 1px solid black;
 }
 .nagivation-name{
-    margin-top: 10px;
-    font-size: 30px;
-    
+    margin-top: 10px;    
 }
 nav.navigation-home {
-    width: 30%;
+    width: 20%;
     float: left;
 }
 .nagivation-container{
 	display : inline-block;
 	float: right;
-	width: 70%;
+	width: 80%;
 }
 li.nagivation-item {
 	width:25%;
