@@ -104,7 +104,8 @@ ul.language-skill li{
 	display: inline-flex;
 	width:100%;
     overflow: hidden;
-    text-align: center;
+    text-align: center;   
+     padding: 20px;
 }
 .portfolio-project{
 	width:33%;
