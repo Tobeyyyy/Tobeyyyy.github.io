@@ -113,7 +113,7 @@ ul.language-skill li{
 .portfolio-project img{
 	width:95%;
 }
-.portfolio-project ：hover{
+.portfolio-project:over{
 	opacity: 0.5
 }
 a.getresume:after {
