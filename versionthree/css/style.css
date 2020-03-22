@@ -109,7 +109,8 @@ ul.language-skill li{
 }
 .portfolio-project{
 	width:33%;
-	overflow:hidden;
+	height: 450px;
+    overflow: hidden;
 }
 .portfolio-project img{
 	width:95%;
@@ -122,6 +123,8 @@ ul.language-skill li{
     margin-right: auto;
     padding: 5px;
     box-shadow: 5px 12px 11px 3px rgba(187, 187, 187, 0.88);
+    height: 400px;
+    overflow: scroll;
 }
 .project-inner p {
     text-align: -webkit-auto;
