@@ -113,6 +113,9 @@ ul.language-skill li{
 .portfolio-project img{
 	width:95%;
 }
+.portfolio-project img ：hover{
+	opacity: 0.5
+}
 a.getresume:after {
     content: ' \25b6';
     font-size: .7rem;
