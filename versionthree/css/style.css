@@ -115,15 +115,16 @@ ul.language-skill li{
 	    height: 200px;
 }
 .project-inner{
-	width: 92%;
+	    width: 92%;
     background-color: #d3d3d329;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 1px 5px 17px 5px rgba(187, 187, 187, 0.88);
+    padding: 5px;
+    box-shadow: 5px 12px 11px 3px rgba(187, 187, 187, 0.88);
 }
 .project-inner p {
     text-align: -webkit-auto;
-    padding: 0 10px 0 10px;
+    padding: 0 15px 0 15px;
 }
 a.getresume:after {
     content: ' \25b6';
