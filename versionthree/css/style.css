@@ -112,10 +112,13 @@ ul.language-skill li{
 }
 .portfolio-project img{
 	width:95%;
+	    height: 200px;
 }
 .project-inner{
-	width:90%;
-	background-color: lightgray;
+	width:95%;
+	background-color: #d3d3d352;
+    margin-left: auto;
+    margin-right: auto;
 }
 .portfolio-project:over{
 	opacity: 0.5
