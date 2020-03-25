@@ -26,14 +26,15 @@ body{
     margin-right: auto;
 }
 .videosource {
-	display: none;
   position: fixed;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
+#netsuite-project-1{
+	display:none;
+}
 li.nagivation-item a, .nagivation-name a{
 	color: black;
 	font-weight: 600;
