@@ -1,4 +1,4 @@
 function showvideo(x){
-	console.log(x);
+	console.log(x.className);
 }
 
