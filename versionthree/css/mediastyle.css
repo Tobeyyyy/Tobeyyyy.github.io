@@ -74,6 +74,18 @@ footer li {
     font-size: 40px;
     display: block;
 }
+p.hello {
+    margin-top: 0px;
+}
+.left-content-inner {
+    height: auto;
+}
+.right-content-inner, .left-content-inner {
+    padding: 15px;
+}
+.right-content-inner p {
+    margin-top: 0px !important;
+}
 
 ul.language-skill {
     display: table-cell;
