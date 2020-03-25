@@ -65,7 +65,7 @@ li {
     margin-top: 5px;
 }
 
-	
+
 	img#cover, .nagivation{
 		display:none;
 	}
@@ -84,7 +84,6 @@ li {
 		background-color: transparent;
 		background-size: auto;
 		box-shadow: inset 0 0 0 9999em;
-		color: rgba(33, 33, 33, 0.50);
 	}
 	h1{
 		font-size: 30px;
