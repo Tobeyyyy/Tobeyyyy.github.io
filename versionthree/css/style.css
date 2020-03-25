@@ -194,7 +194,10 @@ p.box {
     margin-right: auto;
     padding: 15px;
     box-shadow: blue;
-    }
+}
+p a {
+color: red;
+}
 .pink-box {
     background-color: #de7878;
     width: 100%;
