@@ -24,6 +24,48 @@
 }
 
 @media only screen and (max-width: 600px) {
+.navigation-mobile-inner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flex;
+}
+
+.navigation-mobile-menu, .navigation-mobile-logo {
+    width: 50%;
+    float: left;
+}
+
+img {
+    /* display: none; */
+}
+
+.left-content,..right-content, .right-content {
+    width: 100%;
+}
+
+.right-content {}
+
+img.profile-image {
+    width: 200px;
+    height: 200px;
+}
+
+.left-content-inner img {
+    /* width: 200px; */
+}
+
+ul.language-skill {
+    display: table-cell;
+    padding-left: 0px;
+    /* margin-top: 5px; */
+}
+
+li {
+    margin-top: 5px;
+}
+
+	
 	img#cover, .nagivation{
 		display:none;
 	}
