@@ -111,12 +111,7 @@ li {
 	.nagivation-name{
 		font-size:15px;
 	}
-	header{
-		background: url(images/background.jpg) 50% 0% no-repeat;
-		background-color: transparent;
-		background-size: auto;
-		box-shadow: inset 0 0 0 9999em;
-	}
+
 	h1{
 		font-size: 30px;
 		margin-bottom:10px;
