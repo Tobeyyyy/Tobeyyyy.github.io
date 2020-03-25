@@ -44,10 +44,24 @@ img.profile-image {
     width: 200px;
     height: 200px;
 }
+.portfolio-project {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-content {
+    display: block;
+    padding: 0px !important;
+}
+.aboutme-image{
+	width:200px;
+}
 
 ul.language-skill {
     display: table-cell;
     padding-left: 0px;
+    /* margin-top: 5px; */
 }
 
 li {
