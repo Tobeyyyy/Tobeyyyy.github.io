@@ -74,6 +74,9 @@ p.hello {
 .navigation-mobile{
 	display:none;
 }
+.videosource{
+	text-align: center;
+}
 .upper-site-content {
     background: url(../images/natual-IMAGE.jpg) 50% 30% no-repeat;
     background-color: transparent;
