@@ -99,9 +99,10 @@
 				<h1>Portfolio</h1>
 				<br><br>
 				<div class="portfolio-content">
-					<div class="portfolio-project netsuite-inventory-transfer" onclick="showvideo(this)">
+					<p class="showandhide">click image to show and hide video</p>
+					<div class="portfolio-project netsuite-inventory-transfer" onclick="showvideo(this)" >
 						<div class="project-inner">
-							<img src="images/netsuite-inventory-transfer.gif">
+							<img onmouseover="alertvideo()" src="images/netsuite-inventory-transfer.gif">
 							
 							<h2>Inventory Transfer Scan</h2>
 							<p>Get data from exist transaction called inventory transfer from NetSuite</p>
@@ -128,7 +129,7 @@
 				</div>
 			</div>
 			<div class="videosource" id="netsuite-project-1">
-				<iframe width="400" height="300" src="https://www.youtube.com/embed/-ZbCiOxKaPg"></iframe>
+				<iframe width="600" height="500" src="https://www.youtube.com/embed/-ZbCiOxKaPg"></iframe>
 			</div>
 
 			<div style="text-align: center;">
