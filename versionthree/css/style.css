@@ -32,6 +32,15 @@ body{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.download-re{
+	border: 5px solid black;
+	background: black;
+	color: white !important;
+}
+.download-re:hover{
+	background:gray;
+	border: 5px solid gray;
+}
 #netsuite-project-1{
 	display:none;
 }
