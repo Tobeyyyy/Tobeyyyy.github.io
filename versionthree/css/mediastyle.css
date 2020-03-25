@@ -70,6 +70,10 @@ footer li {
     margin-right: 8px;
     margin-left: 8px;
 }
+.myname {
+    font-size: 40px;
+    display: block;
+}
 
 ul.language-skill {
     display: table-cell;
