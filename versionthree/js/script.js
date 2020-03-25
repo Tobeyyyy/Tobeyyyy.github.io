@@ -1,4 +1,4 @@
-function showvideo(this){
+function showvideo(){
 	console.log($(this));
 }
 
