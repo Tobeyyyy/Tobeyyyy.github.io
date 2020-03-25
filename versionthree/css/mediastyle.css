@@ -36,29 +36,18 @@
     float: left;
 }
 
-img {
-    /* display: none; */
-}
-
 .left-content,.right-content {
     width: 100%;
 }
-
-.right-content {}
 
 img.profile-image {
     width: 200px;
     height: 200px;
 }
 
-.left-content-inner img {
-    /* width: 200px; */
-}
-
 ul.language-skill {
     display: table-cell;
     padding-left: 0px;
-    /* margin-top: 5px; */
 }
 
 li {
