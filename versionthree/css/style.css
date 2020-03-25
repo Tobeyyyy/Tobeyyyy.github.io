@@ -29,6 +29,9 @@ li.nagivation-item a, .nagivation-name a{
 	color: black;
 	font-weight: 600;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 ul.footer-left li a , ul.footer-right li a{
 	color: white;
 }
