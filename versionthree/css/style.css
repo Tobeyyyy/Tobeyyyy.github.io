@@ -198,6 +198,9 @@ p.box {
 p a {
 color: red;
 }
+.myname{
+	font-size: 50px;font-weight:600;
+}
 .pink-box {
     background-color: #de7878;
     width: 100%;
