@@ -37,6 +37,7 @@ function getVisitorInfo(){
                   ipArray['city']=data.city;
                   ipArray['region']=data.region;
 				  ipArray['currentTime']=currentTime;
+				  ipArray['version']='V.3';
                   console.log(data);
                   connectDB(ipArray);
 				 //console.log(current);
