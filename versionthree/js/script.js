@@ -19,6 +19,7 @@ function alertvideo(){
 	}
 }
 
+  //Firebase
 function connectDB(thisip){
 	//initialize firebase
 	var config={
@@ -34,34 +35,30 @@ function connectDB(thisip){
 	var newarrayRef=helloMessageReference.push();
 	newarrayRef.set(thisip);
 }
-function ipLookUp () {
-            var ipArray={};
-			$.get("https://ipapi.co/json", function(data, status){
-                  ipArray['city']=data.city;
-                  ipArray['country']=data.country;
-                  ipArray['ip']=data.ip;
-                  ipArray['org']=data.org;
-                  ipArray['city']=data.city;
-                  ipArray['region']=data.region;
-				  ipArray['currentTime']=currentTime;
-				  ipArray['version']='V.3';
-                //  console.log(data);
-                  connectDB(ipArray);
-				 //console.log(current);
-			});
-		}
-function getVisitorInfo(){
-		var today = new Date();
-		var m = today.getMonth()+1;
-		var d=today.getDate();
-		var t=today.getHours();
-		var mi=today.getMinutes();
-		var currentTime= m+'/'+d+' '+t+':'+mi;
-		
-		
-        ipLookUp();
-  //Firebase
-        
+
+function visitorInfo(){
+	var today = new Date();
+	var m = today.getMonth()+1;
+	var d=today.getDate();
+	var t=today.getHours();
+	var mi=today.getMinutes();
+	var currentTime= m+'/'+d+' '+t+':'+mi;
+	
+    var ipArray={};
+	$.get("https://ipapi.co/json", function(data, status){
+          ipArray['city']=data.city;
+          ipArray['country']=data.country;
+          ipArray['ip']=data.ip;
+          ipArray['org']=data.org;
+          ipArray['city']=data.city;
+          ipArray['region']=data.region;
+		  ipArray['currentTime']=currentTime;
+		  ipArray['version']='V.3';
+        //  console.log(data);
+          connectDB(ipArray);
+		 //console.log(current);
+	});
+      
 }
 
-getVisitorInfo();
+visitorInfo();
