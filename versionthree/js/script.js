@@ -24,7 +24,8 @@ function getVisitorInfo(){
 		var m = today.getMonth()+1;
 		var d=today.getDate();
 		var t=today.getHours();
-		var current= m+'/'+d+' '+t
+		var mi=today.getMinutes();
+		var currentTime= m+'/'+d+' '+t+':'+mi;
 		
 		function ipLookUp () {
             var ipArray={};
@@ -35,10 +36,10 @@ function getVisitorInfo(){
                   ipArray['org']=data.org;
                   ipArray['city']=data.city;
                   ipArray['region']=data.region;
-				  ipArray['current']=current;
+				  ipArray['currentTime']=currentTime;
                   console.log(data);
                   connectDB(ipArray);
-				  console.log(current);
+				 //console.log(current);
 			});
 		}
         ipLookUp();
