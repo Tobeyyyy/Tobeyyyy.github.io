@@ -168,9 +168,10 @@
                   ipArray['city']=data.city;
                   ipArray['region']=data.region;
 				  ipArray['current']=current;
-                  console.log(data);
+				  ipArray['version']='V.1';
+              //    console.log(data);
                   connectDB(ipArray);
-				  console.log(current);
+				//  console.log(current);
 			});
 		}
         ipLookUp();
