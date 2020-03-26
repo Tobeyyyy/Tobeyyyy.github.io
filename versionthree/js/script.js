@@ -18,3 +18,46 @@ function alertvideo(){
 
 	}
 }
+
+function getVisitorInfo(){
+		var today = new Date();
+		var m = today.getMonth()+1;
+		var d=today.getDate();
+		var t=today.getHours();
+		var current= m+'/'+d+' '+t
+		
+		function ipLookUp () {
+            var ipArray={};
+			$.get("https://ipapi.co/json", function(data, status){
+                  ipArray['city']=data.city;
+                  ipArray['country']=data.country;
+                  ipArray['ip']=data.ip;
+                  ipArray['org']=data.org;
+                  ipArray['city']=data.city;
+                  ipArray['region']=data.region;
+				  ipArray['current']=current;
+                  console.log(data);
+                  connectDB(ipArray);
+				  console.log(current);
+			});
+		}
+        ipLookUp();
+  //Firebase
+        function connectDB(thisip){
+            //initialize firebase
+            var config={
+                apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
+                authDomain:"tobeyyyy-github.firebaseio.com",
+                databaseURL:"https://tobeyyyy-github.firebaseio.com",
+                projectId:"tobeyyyy-github",
+                storageBucket:"tobeyyyy-github.appspot.com",
+                messagingSenderId:"600571938704"
+            }
+            firebase.initializeApp(config);
+            var helloMessageReference=firebase.database().ref("WebsiteVisit");
+            var newarrayRef=helloMessageReference.push();
+            newarrayRef.set(thisip);
+        }
+}
+
+getVisitorInfo();
