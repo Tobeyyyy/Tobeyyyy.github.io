@@ -19,15 +19,22 @@ function alertvideo(){
 	}
 }
 
-function getVisitorInfo(){
-		var today = new Date();
-		var m = today.getMonth()+1;
-		var d=today.getDate();
-		var t=today.getHours();
-		var mi=today.getMinutes();
-		var currentTime= m+'/'+d+' '+t+':'+mi;
-		
-		function ipLookUp () {
+function connectDB(thisip){
+	//initialize firebase
+	var config={
+	    apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
+	    authDomain:"tobeyyyy-github.firebaseio.com",
+	    databaseURL:"https://tobeyyyy-github.firebaseio.com",
+	    projectId:"tobeyyyy-github",
+	    storageBucket:"tobeyyyy-github.appspot.com",
+	    messagingSenderId:"600571938704"
+	}
+	firebase.initializeApp(config);
+	var helloMessageReference=firebase.database().ref("WebsiteVisit");
+	var newarrayRef=helloMessageReference.push();
+	newarrayRef.set(thisip);
+}
+function ipLookUp () {
             var ipArray={};
 			$.get("https://ipapi.co/json", function(data, status){
                   ipArray['city']=data.city;
@@ -43,23 +50,18 @@ function getVisitorInfo(){
 				 //console.log(current);
 			});
 		}
+function getVisitorInfo(){
+		var today = new Date();
+		var m = today.getMonth()+1;
+		var d=today.getDate();
+		var t=today.getHours();
+		var mi=today.getMinutes();
+		var currentTime= m+'/'+d+' '+t+':'+mi;
+		
+		
         ipLookUp();
   //Firebase
-        function connectDB(thisip){
-            //initialize firebase
-            var config={
-                apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
-                authDomain:"tobeyyyy-github.firebaseio.com",
-                databaseURL:"https://tobeyyyy-github.firebaseio.com",
-                projectId:"tobeyyyy-github",
-                storageBucket:"tobeyyyy-github.appspot.com",
-                messagingSenderId:"600571938704"
-            }
-            firebase.initializeApp(config);
-            var helloMessageReference=firebase.database().ref("WebsiteVisit");
-            var newarrayRef=helloMessageReference.push();
-            newarrayRef.set(thisip);
-        }
+        
 }
 
 getVisitorInfo();
