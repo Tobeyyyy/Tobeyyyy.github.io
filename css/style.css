@@ -112,7 +112,7 @@ p.hello {
     margin-left: 20px;
 }
 td.timeline {
-    width: 35%;
+    width: 25%;
     border-right: 2px solid black;
 }
 .timeline-content {
@@ -125,6 +125,12 @@ td.timeline {
 }
 table.timeline-table tr {
     height: 20px;
+}
+.job1{
+	background-color:#ffffe0ba;
+}
+.job2{
+	background-color:#c0eaf7b5;
 }
 .upper-site-content {
     background: url(../images/natual-IMAGE.jpg) 50% 30% no-repeat;

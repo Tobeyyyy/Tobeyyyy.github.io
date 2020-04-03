@@ -123,8 +123,8 @@ li {
 		margin-left:auto;
 		margin-right:auto;
 	}
-	section{
-	display: contents;
+section{
+		display: grid;
 		margin-top: auto;
 	}
 	.skillpart {
