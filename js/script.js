@@ -53,7 +53,7 @@ function visitorInfo(){
           ipArray['city']=data.city;
           ipArray['region']=data.region;
 		  ipArray['currentTime']=currentTime;
-		  ipArray['version']='V.3';
+		  ipArray['version']='V.main';
         //  console.log(data);
           connectDB(ipArray);
 		 //console.log(current);
