@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+	
+		<title>Rong Zhang</title>
+        <link rel="shortcut icon" href="images/main-logo2.png"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mediastyle.css">		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset='UTF-8'/>
+	</head>	
+	<body>
+	<div>
+	<img src="images/background.jpg" id="cover">
+	</div>
+		<header>
+		<!---navigation menu---->
+		<div class="nagivation">
+            <div class="navigation-inner">
+            <nav class="navigation-home">
+                <div class="nagivation-name">
+               <a href="./"> Rong Zhang</a>
+                </div>
+            </nav>
+			<nav class="nagivation-container">
+			<div class="navigation-button">
+				<ul class="nagivation-primary">
+					<li class="nagivation-item"><a href="./">Home</a></li>
+					<li class="nagivation-item"><a href="./">Projects</a></li>
+					<li class="nagivation-item"><a href="resume">Resume</a></li>
+					<li class="nagivation-item"><a href="./">Contact Me</a></li>
+				</ul>
+				</div>
+			</nav>
+            </div>
+		</div>
+		<div class="navigation-mobile">
+          <div class="navigation-mobile-content">
+			<img src="./images/navigation-icon.png" width=50 />
+		   </div>
+		  </div>
+		</div>
+		<!---end navigation menu---->
+		<!---introduction part---->
+		<div class="intropart">
+			<div class="intropart-inner">
+				<h1>Hi, I'm Rong Zhang</h1>
+				<h2>NetSuite Developer & Netsuite Administrator </h2>
+				<br><br>
+				<a href="resume" class="getresume" style="text-decoration: underline;">GET IN TOUCH?</a>
+			</div>
+		</div>
+		<!---end introduction part---->
+		</header>
+		<!---site content---->
+		<div class="site-content">
+			<!---skill content---->
+		<section>
+			<div class='skillpart'>
+				<ul class='project-title'>Experience</ul>
+				<li>HTML,CSS,JavaScript</li>
+				<li>SuiteScript (NetSuite API)</li>
+				<li>Python</li>
+				<li>C++</li>
+			</div>
+			<div class='skillpart'>
+				<ul class='project-title'>Language</ul>
+				<li>English (Fluently)</li>
+				<li>Chinese (Native)</li>
+			</div>
+			<div class='skillpart'>
+				<ul class='project-title'>Hobbies</ul>
+				<li>Programming</li>
+				<li>Exercise (Swimming, Running, Ice Skating etc.)</li>
+				<li>Watching Movies</li>		
+			</div>
+		</section>
+		<!---end skill content---->
+		<!---projects content---->
+		<section style="border-bottom:none">
+		<div class="slide-right">
+			<div class='project'>
+				<img class="project-image" src="images/NetSuite-SuiteScript.jpg"></img>
+				<a class="project-title" href="netsuite">NetSuite Projects</a>
+				<p class="project-descrip">Customize NetSuite to having more great functions. Using SuiteScript 2.0 API</p>
+				<a class="project-title more" href="netsuite">Learn More..</a>
+			</div>
+			<div class='project'>
+				<img class="project-image" src="images/tools.jpg"></img>
+				<a class="project-title" href="tools" >Tools</a>
+				<p class="project-descrip">I am arranging more projects...</p>
+				<a class="project-title more">Learn More..</a>
+			</div>
+		</div>
+		</section>
+        <section>
+			<div class="slide-right">
+            <div class='project'>
+                <img class="project-image" src="images/website.png"></img>
+                <a class="project-title" href="website">Websites</a>
+                <p class="project-descrip">I am arranging more projects...</p>
+                <a class="project-title more">Learn More..</a>
+            </div>
+            <div class='project'>
+                <img class="project-image" src="images/Project-Comming.jpg"></img>
+                <a class="project-title" href="versiontwo">version two</a>
+                <p class="project-descrip">I am arranging more projects...</p>
+                <a class="project-title more">Learn More..</a>
+            </div>
+			</div>
+        </section>
+		<!---end projects content---->
+		<!---contact info content---->
+		<div class="contact-section">
+			<div class="contact-info">
+			<ul class="contact-info-list">
+				<li class="has-label">
+				<strong>Email</strong>
+				<br>
+				<div><a class="myemail" href="mailto:tobey0048@gmail.com" style="color:cornflowerblue;" >tobey0048@gmail.com</a></div>
+				</li>
+				<li class="has-label"><strong>Address</strong><br>
+				<div>New York, United State</div></li>
+			</ul>
+			</div>
+		</div>
+		<div class="buttom-to-top">
+		<a class="buttom-to-top">Top</a>
+		</div>
+		</div>
+			<!---end contact info content---->
+		<!---footer---->
+		<footer>
+			<ul class="footer-left">
+			<li><a href="./">Home</a></li>
+			<li><a href="privacy/">Privacy</a></li>
+			<li><a href="report/">Report a Bug</a></li>
+			<li><a href="help/">Help</a></li>
+            <li style="display:none;" id="hideinfo"></li>
+			</ul>
+			<ul class="footer-right">
+			<li>Created by <a href="https://github.com/Tobeyyyy/Tobeyyyy.github.io">Rong Zhang</a></li>
+			</ul>
+		</footer>
+        <!---end footer---->
+		<!---end site content---->
+	</body>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+	<script>
+		<!-----------jquery-------------->
+		//from IP Geolocation API
+        var ip;
+		var today = new Date();
+		var m = today.getMonth()+1;
+		var d=today.getDate();
+		var t=today.getHours();
+		var current= m+'/'+d+' '+t
+		
+		function ipLookUp () {
+            var ipArray={};
+			$.get("https://ipapi.co/json", function(data, status){
+                  ipArray['city']=data.city;
+                  ipArray['country']=data.country;
+                  ipArray['ip']=data.ip;
+                  ipArray['org']=data.org;
+                  ipArray['city']=data.city;
+                  ipArray['region']=data.region;
+				  ipArray['current']=current;
+				  ipArray['version']='V.1';
+                  console.log(data);
+                  connectDB(ipArray);
+				  console.log(current);
+			});
+		}
+        ipLookUp();
+  //Firebase
+        function connectDB(thisip){
+            //initialize firebase
+            var config={
+                apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
+                authDomain:"tobeyyyy-github.firebaseio.com",
+                databaseURL:"https://tobeyyyy-github.firebaseio.com",
+                projectId:"tobeyyyy-github",
+                storageBucket:"tobeyyyy-github.appspot.com",
+                messagingSenderId:"600571938704"
+            }
+            firebase.initializeApp(config);
+            var helloMessageReference=firebase.database().ref("WebsiteVisit");
+            var newarrayRef=helloMessageReference.push();
+            newarrayRef.set(thisip);
+        }
+    
+	</script>
+</html>
