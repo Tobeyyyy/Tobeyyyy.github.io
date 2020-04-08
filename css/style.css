@@ -16,7 +16,7 @@ body{
 .nagivation-name img {
     width: 40px;
 }
-.nagivation,.contact-section,.site-content,section#aboutme{
+.nagivation,.contact-section,.site-content{
 	width:100%;
 	display: inline-block;
 }
@@ -25,6 +25,29 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.circle {
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+	width: 60px;
+    height: 60px;
+}
+.circle-outer{
+	 width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: red;
+	    position: absolute;
+	
+}
+.circle-inner{
+	 width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+	    position: absolute;
+}
+
 .videosource {
   position: fixed;
     top: 50%;
@@ -56,7 +79,7 @@ ul.footer-left li a , ul.footer-right li a{
 }
 section {
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
 }
 .left-content {
     width: 50%;
@@ -78,8 +101,8 @@ p.showandhide {
     height: 400px;
 }
 img.profile-image {
-    width: 400px;
-     height: 400px;
+    width: 100%;
+     height: auto;
     border-radius: 100%;
     text-align: center;
     border-style: solid;
@@ -150,14 +173,28 @@ img#cover {
 
 ul.language-skill {
     list-style-type: none;
-    display: flex;
+	padding-inline-start: 0;
 }
 ul.language-skill li{
-	margin-left: 15px;
-    background-color: #545454;
+	margin-left: 5px;
+  
     color: white;
     font-weight: 700;
     padding: 5px;
+	min-width: 80px;
+	position: relative;
+
+	width: 90px;
+    display: inline-block;
+}
+.language-skill-spec{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 20px;
 }
 
 .portfolio-content{
@@ -467,4 +504,26 @@ li.nagivation-item:hover{
 /*delete when finish*/
 .skillpart {
  /*   color: white;*/
+}
+
+span.skill-name{
+	color:#545454;
+}
+span.percen{
+	visibility:hidden !important;
+	
+}
+.c100:hover > span.skill-name{
+	visibility:hidden !important;
+		display:none;
+}
+.c100:hover > span.percen{
+	visibility:visible !important;
+}
+.c100.orange .bar, .c100.orange .fill{
+	border-color: #74c8d3d1 !important;
+	
+}
+.c100:hover > span.percen{
+	color: #74c8d3d1 !important;
 }
