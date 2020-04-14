@@ -82,6 +82,10 @@ h1 {
         margin: auto;
     text-align: center;
 }
+::-webkit-scrollbar {
+    display: none;
+}
+
 /*section 1*/
 section#home {
     background-color: #cceefa4a;
