@@ -84,7 +84,7 @@ h1 {
 }
 /*section 1*/
 section#home {
-    background-color: #add8e64a;
+    background-color: #cceefa4a;
 }
 img.profile-image {
     width: 300px;
@@ -117,9 +117,7 @@ a {
     color: white !important;
 }
 /*section 2*/
-section#aboutme {
-    background-color: #fac1cb4d;
-}
+
 ul.language-skill {
     list-style-type: none;
     padding-inline-start: 0;
@@ -145,8 +143,9 @@ span.percen{
 }
 /*section 3*/
 section#portfolio {
-    background-color: #fafab95e;
+    background-color: #ffe5e94d;
 }
+
 .portfolio-content {
     display: inline-flex;
     width: 100%;
@@ -211,9 +210,7 @@ section#portfolio, #portfolio div.little-section-inner {
 }
 
 /*section 4*/
-section#experience {
-    background-color: #e6e6fa7d;
-}
+
 table.timeline-table tr {
     height: 20px;
 }
