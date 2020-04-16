@@ -62,3 +62,13 @@ function visitorInfo(){
 }
 
 visitorInfo();
+
+//mobile navigation setup
+$('.navigation-mobile').click(function(){
+	if($('.navigation-button-mobile').css('display')=='block'){
+			$('.navigation-button-mobile').css('display','none');
+
+	}else{
+		$('.navigation-button-mobile').css('display','block');
+	}
+});
