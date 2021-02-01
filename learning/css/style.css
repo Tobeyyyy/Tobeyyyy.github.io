@@ -1,4 +1,47 @@
 /******navigation**************************************/
 
 
+.nagivation{
+	font-family: cursive;
+	border-bottom: inset;
+	border-color: rgba(255, 255, 255, 0.3);
+}
+nav.navigation-home {
+    width: 20%;
+    float: left;
+	margin-top: 10px;
+}
+div.nagivation-name {
+    margin-top: 10px;
+}
+a {
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.nagivation-name img {
+    width: 40px;
+}
+
+.nagivation-container {
+    display: inline-block;
+    float: right;
+    width: 80%;
+}
+.navigation-button {
+    float: right;
+    width: 90%;
+}
+ul.nagivation-primary {
+    display: flex;
+    list-style-type: none;
+}
+li.nagivation-item {
+    width: 25%;
+    text-align: center;
+    border-top: solid transparent;
+}
+.navigation-mobile {
+    display: none;
+}
 /******navigation end**************************************/
