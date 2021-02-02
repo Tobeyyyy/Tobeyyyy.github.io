@@ -20,7 +20,7 @@ a {
     letter-spacing: 1px;
 }
 .nagivation-name img {
-    width: 40px;
+    width: 80px;
 }
 
 .nagivation-container {
@@ -43,5 +43,10 @@ li.nagivation-item {
 }
 .navigation-mobile {
     display: none;
+}
+
+#menu-icon{
+	position: fixed;
+	float:right;
 }
 /******navigation end**************************************/
