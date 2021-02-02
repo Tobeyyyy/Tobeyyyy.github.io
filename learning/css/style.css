@@ -16,12 +16,15 @@
 
 div.navigation-logo {
    width: 10%;
-   display: inline-block;
+   display:none;
 }
 
-div.nagivation-item img {
+div.nagivation-item img{
     width: 80px;
 	margin-top: -30px;
+}
+.navigation-logo img {
+	  width: 80px;
 }
 
 div#menu-icon{

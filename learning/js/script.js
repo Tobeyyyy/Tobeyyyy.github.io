@@ -1,23 +1,4 @@
-function showvideo(x){
-	var thistarget=x.className;
-	if (thistarget.indexOf('netsuite-inventory-transfer')){
-		if ($('#netsuite-project-1').css('display')=='none'){
-					$('#netsuite-project-1').css('display','block');
-			}else{
-				$('#netsuite-project-1').css('display','none');
-			}
-	}
-	console.log(x.className);
-}
 
-function alertvideo(){
-	if ($('p.showandhide').css('display')=='none'){
-		$('p.showandhide').css('display','block');
-	}else{
-		$('p.showandhide').css('display','none');
-
-	}
-}
 
 
 //menu button
@@ -31,17 +12,30 @@ $('#menu-icon').click(function(){
 
 //responsive height
 //console.log(parseInt($('.nagivation').css('height')));//initial height
-	$('#home').css('height',window.innerHeight-parseInt($('.nagivation').css('height')));
-	$('#aboutme').css('height',window.innerHeight);
-	$('#portfolio').css('height',window.innerHeight);
-	$('#experience').css('height',window.innerHeight);
+$('#home').css('height',window.innerHeight-parseInt($('.nagivation').css('height')));
+$('#aboutme').css('height',window.innerHeight);
+$('#portfolio').css('height',window.innerHeight);
+$('#experience').css('height',window.innerHeight);
+var height = $(window).height();
+var width = $(window).width();
 
+/*	if(parseInt(width)<=600){
+		$('#navigation-logo').click(function(){
+			console.log('click');
+			if($('.nagivation-container').css('visibility')=='visible'){
+				('.nagivation-container').css('visibility')=='hidden';
+			}else{
+			
+			}
+		});
+	}*/
 $(window).resize(function() {
-	var height = $(window).height();
+	
 	$('#home').css('height',window.innerHeight-parseInt($('.nagivation').css('height')));
 	$('#aboutme').css('height',window.innerHeight);
 	$('#portfolio').css('height',window.innerHeight);
 	$('#experience').css('height',window.innerHeight);
+	
 });
 
 $(window).scroll(function() {
