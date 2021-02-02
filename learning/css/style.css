@@ -5,38 +5,66 @@
 	font-family: cursive;
 	border-bottom: inset;
 	border-color: rgba(255, 255, 255, 0.3);
+	width: 100%;
 }
-nav.navigation-home {
-    width: 20%;
-    float: left;
-	margin-top: 10px;
+
+.navigation-inner {
+    width: 98%;
+    margin: auto;
+	display: inline-flex;
 }
-div.nagivation-name {
-    margin-top: 10px;
+
+div.navigation-logo {
+   width: 10%;
+   display: inline-block;
 }
+
+div.nagivation-item img {
+    width: 80px;
+	margin-top: -30px;
+}
+
+div#menu-icon{
+	position: fixed;
+	right: 30px;
+	display: inline-block;
+	border-radius: 60px;
+    box-shadow: 4px 2px 5px 2px #11111182;
+	width: 60px;
+	visibility: hidden;
+}
+div#menu-icon img{
+	width: 60px;
+}
+
 a {
     font-family: "Roboto", "Helvetica Neue", sans-serif;
     text-decoration: none;
     letter-spacing: 1px;
 }
-.nagivation-name img {
-    width: 80px;
+.nagivation-item a {
+    color: #464545;
+    font-weight: bold;
 }
-
 .nagivation-container {
     display: inline-block;
-    float: right;
-    width: 80%;
+        visibility: visible;
+    width: 86%;
+	margin-top: 30px;
+
+
 }
 .navigation-button {
-    float: right;
-    width: 90%;
+       margin: auto;
+    width: 96%;
+	  display: flex;
 }
 ul.nagivation-primary {
     display: flex;
     list-style-type: none;
 }
-li.nagivation-item {
+.nagivation-item {
+	
     width: 25%;
     text-align: center;
     border-top: solid transparent;
@@ -45,8 +73,78 @@ li.nagivation-item {
     display: none;
 }
 
-#menu-icon{
-	position: fixed;
-	float:right;
-}
+
 /******navigation end**************************************/
+
+/******content**********************************************/
+section{
+	width: 100%;
+	
+}
+.section-inner{
+	width: 98%;
+	margin: auto;
+}
+#home{
+	background-color:#e3e3e3;
+}
+#aboutme{
+	background-color:#f2cebe94;
+}
+#portfolio{
+	background-color:#9ee5cdab;
+}
+#experience{
+	background-color:#dba7c599;
+}
+
+/******content end**********************************************/
+
+
+/******footer**********************************************/
+footer {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+
+   
+    font-size: 14px;
+}
+.content-inner {
+    width: 98%;
+    margin: auto;
+    height: 100%;
+}
+
+.footer-left {
+    float: left;
+    display: flex;
+	width: 70%;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.footer-item {
+    width: 20%;
+    color: white;
+}
+.footer-left a, .footer-right  a, .footer-right div{
+    color: white;
+}
+.footer-right {
+    float: right;
+	margin-top: 10px;
+	width: 25%
+}
+/******end footer**********************************************/
+
+/*footer animation*/
+.footer-right:hover{
+	-webkit-transform: rotateZ(-10deg);
+	transform: rotateZ(-10deg);
+}
+.footer-item:hover{
+	transform: perspective(1px) translateZ(0);
+    box-shadow: 3px 6px 17px 5px rgb(89, 218, 247);
+}
+/*footer animation end*/

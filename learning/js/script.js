@@ -19,56 +19,37 @@ function alertvideo(){
 	}
 }
 
-  //Firebase
-function connectDB(thisip){
-	//initialize firebase
-	var config={
-	    apiKey:"AIzaSyA7l48kyYuE6YJzofESse0Wlhcw4WdhUUo",
-	    authDomain:"tobeyyyy-github.firebaseio.com",
-	    databaseURL:"https://tobeyyyy-github.firebaseio.com",
-	    projectId:"tobeyyyy-github",
-	    storageBucket:"tobeyyyy-github.appspot.com",
-	    messagingSenderId:"600571938704"
-	}
-	firebase.initializeApp(config);
-	var helloMessageReference=firebase.database().ref("WebsiteVisit");
-	var newarrayRef=helloMessageReference.push();
-	newarrayRef.set(thisip);
-}
 
-function visitorInfo(){
-	var today = new Date();
-	var m = today.getMonth()+1;
-	var d=today.getDate();
-	var t=today.getHours();
-	var mi=today.getMinutes();
-	var currentTime= m+'/'+d+' '+t+':'+mi;
-	
-    var ipArray={};
-	$.get("https://ipapi.co/json", function(data, status){
-          ipArray['city']=data.city;
-          ipArray['country']=data.country;
-          ipArray['ip']=data.ip;
-          ipArray['org']=data.org;
-          ipArray['city']=data.city;
-          ipArray['region']=data.region;
-		  ipArray['currentTime']=currentTime;
-		  ipArray['version']='V.main';
-        //  console.log(data);
-          connectDB(ipArray);
-		 //console.log(current);
-	});
-      
-}
-
-visitorInfo();
-
-//mobile navigation setup
-$('.navigation-mobile').click(function(){
-	if($('.navigation-button-mobile').css('display')=='block'){
-			$('.navigation-button-mobile').css('display','none');
-
+//menu button
+$('#menu-icon').click(function(){
+	if($('.nagivation-container')[0].style['position']=='initial'){
+		$('.nagivation-container').css('position','fixed');
 	}else{
-		$('.navigation-button-mobile').css('display','block');
+		$('.nagivation-container').css('position','initial');
 	}
+});
+
+//responsive height
+//console.log(parseInt($('.nagivation').css('height')));//initial height
+	$('#home').css('height',window.innerHeight-parseInt($('.nagivation').css('height')));
+	$('#aboutme').css('height',window.innerHeight);
+	$('#portfolio').css('height',window.innerHeight);
+	$('#experience').css('height',window.innerHeight);
+
+$(window).resize(function() {
+	var height = $(window).height();
+	$('#home').css('height',window.innerHeight-parseInt($('.nagivation').css('height')));
+	$('#aboutme').css('height',window.innerHeight);
+	$('#portfolio').css('height',window.innerHeight);
+	$('#experience').css('height',window.innerHeight);
+});
+
+$(window).scroll(function() {
+	 var scroll = $(window).scrollTop();
+	 if(scroll <10){
+		 $('div#menu-icon').css('visibility','hidden');
+		 $('.nagivation-container').css('position','initial');
+	 }else{
+	 	$('div#menu-icon').css('visibility','visible');
+	 }
 });

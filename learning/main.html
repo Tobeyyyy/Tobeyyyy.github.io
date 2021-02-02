@@ -7,70 +7,69 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mediastyle.css">	
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
 	</head>	
 	<body>
 		<header>
 		<!---navigation menu---->
 			<div class="nagivation">
 	            <div class="navigation-inner">
-		            <nav class="navigation-logo">
-		                <div class="nagivation-name">
-		               		<a href="#home" ><img src="images/logo-512x512.jpeg"/></a>
-		                </div>
-		            </nav>
-					<div id="menu-icon"><img src="images/menu-icon.png" width=80 /></div>
-					<nav class="nagivation-container">
+		
+					<div id="menu-icon"><img src="images/menu-icon.png"/></div>
+
+					<nav class="nagivation-container" style="position:initial;">
 						<div class="navigation-button">
-							<ul class="nagivation-primary">
-								<li class="nagivation-item"><a href="#home">Home</a></li>
-								<li class="nagivation-item"><a href="#aboutme">About Me</a></li>
-								<li class="nagivation-item"><a href="#portfolio">Portfolio</a></li>
-								<li class="nagivation-item"><a href="#experience">Experience</a></li>
-								<li class="nagivation-item"><a href="#contactme">Contact Me</a></li>
-							</ul>
+							<div class="nagivation-item">		               	<a href="#home" ><img src="images/logo-512x512.jpeg"/></a></div>
+							<div class="nagivation-item"><a href="#aboutme">About Me</a></div>
+							<div class="nagivation-item"><a href="#portfolio">Portfolio</a></div>
+							<div class="nagivation-item"><a href="#experience">Experience</a></div>
+							<div class="nagivation-item"><a href="#contactme">Contact Me</a></div>
 						</div>
 					</nav>
 	            </div>
 			</div>
-			<div class="navigation-mobile">
-				<div class="navigation-mobile-inner">
-					<div class="navigation-mobile-logo">
-						<img id="logo-mobile" src="images/logo-512x512.jpeg" width=50 />
-					</div>
-					<div class="navigation-button-mobile">
-							<ul class="nagivation-primary-mobile">
-								<li><div><a href="#home">Home</a></div></li>
-								<li><div><a href="#aboutme">About Me</a></div></li>
-								<li><div><a href="#portfolio">Portfolio</a></div></li>
-								<li><div><a href="#experience">Experience</a></div></li>
-								<li><div><a href="#contactme">Contact Me</a></div></li>
-							</ul>
-						</div>
-				</div>
-		  	</div>
+	
 		<!---end navigation menu---->
 		</header>
 	
+		<!---content------------------>
+		<section id="home">
+			<div class="section-inner">
+			</div>
+		</section>
+		
+		<section id="aboutme">
+			<div class="section-inner">
+			</div>
+		</section>
+		
+		<section id="portfolio">
+			<div class="section-inner">
+			</div>
+		</section>
+		
+		<section id="experience">
+			<div class="section-inner">
+			</div>
+		</section>
+	
+		<!---content end------------------>
 		<!---footer---->
 		<footer>
 			<div class="content-inner">
-				<ul class="footer-left">
-					<li><a href="./">Home</a></li>
-					<li><a href="privacy/">Privacy</a></li>
-					<li><a href="report/">Report a Bug</a></li>
-					<li><a href="help/">Help</a></li>
-		            <li style="display:none;" id="hideinfo"></li>
-				</ul>
-				<ul class="footer-right">
-					<li>Created by <a href="https://github.com/Tobeyyyy/Tobeyyyy.github.io">Rong Zhang</a></li>
-				</ul>
+				<div class="footer-left">
+					<div class="footer-item"><a href="./">Home</a></div>
+					<div class="footer-item"><a href="privacy/">Privacy</a></div>
+					<div class="footer-item"><a href="report/">Report a Bug</a></div>
+		            <div class="footer-item" style="display:none;" id="hideinfo"></div>
+				</div>
+				<div class="footer-right">
+					<div>Created by <a href="https://github.com/Tobeyyyy/Tobeyyyy.github.io">Rong Zhang</a></li>
+				</div>
 			</div>
 		</footer>
         <!---end footer---->
 		<!---end site content---->
 	</body>
-    <script src="./js/script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- 	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+    <script src="js/script.js"></script>
 </html>
