@@ -82,14 +82,21 @@ ul.nagivation-primary {
 /******content**********************************************/
 section{
 	width: 100%;
-	
 }
 .section-inner{
-	width: 98%;
+	width: 90%;
 	margin: auto;
+	
 }
+.inner-content{
+	height: 500px; 
+	box-shadow: 4px 2px 5px 2px #11111182; 
+    padding: 50px;
+}
+ 
+	
 #home{
-	background-color:#e3e3e3;
+	background-color:#ff7d8029;
 }
 #aboutme{
 	background-color:#f2cebe94;
