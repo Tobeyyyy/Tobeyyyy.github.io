@@ -17,7 +17,7 @@ $('#aboutme').css('height',window.innerHeight);
 $('#portfolio').css('height',window.innerHeight);
 $('#experience').css('height',window.innerHeight);
 $('#home .intro-content').css('height',window.innerHeight-parseInt($('.nagivation').css('height')));
-
+$('.intro-image img').css('height',window.innerHeight-parseInt($('.nagivation').css('height')));
 $('#aboutme .intro-content').css('height',window.innerHeight);
 $('#portfolio .intro-content').css('height',window.innerHeight);
 
