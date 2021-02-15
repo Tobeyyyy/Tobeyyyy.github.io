@@ -20,7 +20,7 @@ $('#home .intro-content').css('height',window.innerHeight-parseInt($('.nagivatio
 $('.intro-image img').css('height',window.innerHeight-parseInt($('.nagivation').css('height')));
 $('#aboutme .intro-content').css('height',window.innerHeight);
 $('#portfolio .intro-content').css('height',window.innerHeight);
-
+$('#experience .intro-content').css('height',window.innerHeight);
 
 var height = $(window).height();
 var width = $(window).width();
@@ -44,6 +44,7 @@ $(window).resize(function() {
 	
 });
 
+
 $(window).scroll(function() {
 	 var scroll = $(window).scrollTop();
 	 if(scroll <10){
@@ -52,4 +53,12 @@ $(window).scroll(function() {
 	 }else{
 	 	$('div#menu-icon').css('visibility','visible');
 	 }
+	 
+	 $('section').each(function () {
+        if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+         //   console.log($(this).attr('id'));
+            console.log($(this).next().attr('id'))
+        }
+
+    });
 });

@@ -15,14 +15,16 @@ body{
 
 /******navigation**************************************/
 
-
+::scrollbar {
+  display: none;
+}
 .nagivation{
 	font-family: cursive;
 	border-bottom: inset;
 	border-color: rgba(255, 255, 255, 0.3);
 	width: 100%;
     
-        border-color: #beddf2;  
+       /* border-color: #beddf2;  */
 }
 
 .navigation-inner {
@@ -119,7 +121,7 @@ section{
    width:50%;
     display: table-cell;
     vertical-align: middle;
-        color: #ffffff;
+        
     line-height: 40px;
 }
  p.intro-name{
@@ -137,22 +139,69 @@ p.intro-resume{
 
 .intro-image img {
     max-width: 100%;
-  opacity: 0.6
+ /* opacity: 0.6*/
 }
 
 #home{
-	background-color: #beddf2;
+	background-color: black;
+}
+#home , #portfolio {
+    color: #ffffff;
 }
 #aboutme{
-	background-color:#f2cebe94;
+	background-color: white;
 }
 #portfolio{
-	background-color:#9ee5cdab;
+	background-color: black;
 }
 #experience{
-	background-color:#dba7c599;
+	background-color: white;
 }
 
+ul.language-skill {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+ul.language-skill li {
+    margin-left: 5px;
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+    min-width: 80px;
+    position: relative;
+    width: 90px;
+    display: inline-block;
+}
+span.skill-name {
+    color: #545454;
+}
+.c100.orange .bar, .c100.orange .fill {
+    border-color: #74c8d3d1 !important;
+}
+span.percen{
+    visibility:hidden !important;
+}
+
+#portfolio-pro-1{
+    width: 33%;
+    height:100px;
+    background-color: pink;
+}
+#portfolio-pro-2{
+    width: 33%;
+    height:100px;
+    background-color: white;
+}
+#portfolio-pro-3{
+    width: 33%;
+    height:100px;
+    background-color: red;
+}
+#portfolio-pro-4{
+    width: 33%;
+    height:100px;
+    background-color: green;
+}
 /******content end**********************************************/
 
 
@@ -195,8 +244,27 @@ text-align: center;
 /******end footer**********************************************/
 
 /*animation*/
+.nagivation-item a:hover {
+    background-color: gray;
+    color: white;
+    
+}
 .intro-resume:hover{
     background-color: #bc2169;
+}
+.c100:hover > span.skill-name{
+    visibility:hidden !important;
+        display:none;
+}
+.c100:hover > span.percen{
+    visibility:visible !important;
+}
+.c100.orange .bar, .c100.orange .fill{
+    border-color: #74c8d3d1 !important;
+    
+}
+.c100:hover > span.percen{
+    color: #74c8d3d1 !important;
 }
 /*footer animation*/
 .footer-right:hover{
