@@ -4,6 +4,8 @@
 	font-family: cursive;
 	border-bottom: inset;
 	border-color: rgba(255, 255, 255, 0.3);
+    background-color: #f4f5f0;
+    height: 80px;
 }
 nav.navigation-home {
     width: 20%;
@@ -24,21 +26,22 @@ a {
 
 .nagivation-container {
     display: inline-block;
-    float: right;
-    width: 80%;
+    width: 50%;
 }
 .navigation-button {
-    float: right;
-    width: 90%;
+    width: 50%;
+    margin: auto;
+    height: 100%;
 }
 ul.nagivation-primary {
     display: flex;
     list-style-type: none;
+    margin-top: 25px;
 }
 li.nagivation-item {
     width: 25%;
     text-align: center;
-    border-top: solid transparent;
+    border-radius: 50% 20% / 10% 40%;
 }
 .navigation-mobile {
     display: none;
@@ -47,9 +50,20 @@ li.nagivation-item {
 
 
 /******body**************************************/
+body{
+    height: 100%;
+}
 section {
     width: 100%;
-    min-height: 500px;
+    
+}
+
+section#home{
+    height: 100vh;
+}
+section#aboutme,section#portfolio {
+    height:75vh;
+    position: relative;
 }
 .left-content {
     width: 50%;
@@ -102,7 +116,7 @@ img.profile-image {
 }
 .myname {
     font-size: 50px;
-    font-weigh:600;
+    /* font-weigh:600; */
 }
 
 .vertical-align-center p a {
@@ -147,7 +161,7 @@ span.percen{
 }
 /*section 3*/
 section#portfolio {
-    background-color: #ffe5e94d;
+    background-color: #f4f5f0c7;
 }
 
 .portfolio-content {
@@ -179,6 +193,7 @@ p.showandhide {
     box-shadow: 5px 12px 11px 3px rgba(69, 69, 70, 0.88);
     height: 400px;
     overflow: scroll;
+    border-radius: 100px;
 }
 .portfolio-project img {
     width: 95%;
@@ -209,9 +224,9 @@ p.box {
 p a {
     color: red;
 }
-section#portfolio, #portfolio div.little-section-inner {
+/* section#portfolio, #portfolio div.little-section-inner {
     height: 800px;
-}
+} */
 
 /*section 4*/
 
@@ -243,6 +258,8 @@ footer {
     background-color: black;
     height: 60px;
     width: 100%;
+    bottom: 0; /* stick to bottom */
+    position: relative;
 }
 .footer-left {
     float: left;
@@ -250,6 +267,7 @@ footer {
 }
 footer ul {
     list-style-type: none;
+    margin-top: 15px;
 }
 footer li {
     margin-right: 20px;
@@ -275,9 +293,9 @@ ul.footer-left li a, ul.footer-right li a {
 	border-color: #74c8d3d1 !important;
 	
 }
-.c100:hover > span.percen{
+/* .c100:hover > span.percen{
 	color: #74c8d3d1 !important;
-}
+} */
 @keyframes slide-right {
 	0% {
 		margin-left: -75%;
@@ -323,7 +341,7 @@ ul.footer-left li a, ul.footer-right li a {
 	}
 }
 li.nagivation-item:hover{
-	border-top: solid;
+	background-color: #9b979784;
 }
 a.myemail:hover{
 	margin-left: 10px;
@@ -358,17 +376,87 @@ div.portfolio-project:hover{
 }
 /******end animation**************************************/
 /******multi tag**************************************/
+.nagivation {
+    z-index: 4;
+    position: sticky;
+    top: 0px;
+}
 .nagivation,.contact-section,.site-content{
 	width:100%;
 	display: inline-block;
 }
+.footer-inner{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    vertical-align: middle;
+}
 .navigation-inner, .intropart, .contact-info, .down-site-content, .content-inner {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 20%;
 }
 li.nagivation-item a, .nagivation-name a {
-    color: black;
+    color: #444343;
     font-weight: 600;
 }
 /******end multi tag**************************************/
+
+.intro-text{
+    position: absolute;
+    width: 40%;
+    height: 150px;
+    z-index: 2;
+    margin: auto;
+    margin-top: 16%;
+    text-align: center;
+    font-size: 16px;
+    color:black
+}
+
+.intro-right {
+    width: 40%;
+}
+
+.intro-left {
+    width: 60%;
+}
+
+.intro-right img {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+section.intro-section {
+    display: flex;
+    
+}
+
+.intro-left {
+    background-color: #f4f5f0;
+}
+a:link {
+text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0% {
+         opacity: 0; 
+         font-size: 40px;
+         margin-right: 50%;
+         text-align: center;
+         width: 100%;
+        }
+    100% { 
+        opacity: 1;
+         width: 100%;
+        margin-right: 50%;
+        text-align: center;
+        writing-mode: vertical-lr;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(-180deg);	
+    }
+  }
