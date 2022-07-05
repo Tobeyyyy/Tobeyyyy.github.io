@@ -24,6 +24,56 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+.intro-right {
+    width: 100%;
+    position: absolute;
+}
+
+.intro-left{
+    width: 100%;
+	height: 50vh;
+}
+
+ .intro-left div {
+     width: 70%;
+     float: right;
+ }
+.intro-right img {
+    min-height: 300px;
+}
+
+.intro-text {
+    position: relative;
+    width: 55%;
+    height: 100%;
+    font-size: 12px;
+    float: right;
+}
+
+section#home {
+    height: auto;
+}
+
+header {
+    display: none;
+}
+
+section#home {
+    width: 100%;
+}
+section#portfolio {
+    height: auto !important;
+}
+
+.content-inner {
+    position: relative;
+}
+
+section#aboutme {
+    height: 100%;
+    position: initial;
+}
 /******header******/
 	.navigation-mobile-inner {
 		width: 100%;
