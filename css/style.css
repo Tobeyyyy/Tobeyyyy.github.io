@@ -354,8 +354,8 @@ a.myemail:hover{
 	transform: rotateZ(-10deg);
 }
 .footer-left li:hover{
-	transform: perspective(1px) translateZ(0);
-    box-shadow: 3px 6px 17px 5px rgb(89, 218, 247);
+	background-color: gray;
+    border-radius: 50px;
 }
 a.getresume:after {
     content: ' \25b6';
