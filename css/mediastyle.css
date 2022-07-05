@@ -41,6 +41,8 @@
  }
 .intro-right img {
     min-height: 300px;
+	width: 100%;
+	max-width: 450px;
 }
 
 .intro-text {
