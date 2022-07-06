@@ -41,7 +41,8 @@ function visitorInfo() {
   var d = today.getDate();
   var t = today.getHours();
   var mi = today.getMinutes();
-  var currentTime = m + "/" + d + " " + t + ":" + mi;
+  var y = today.getFullYear();
+  var currentTime = m + "/" + d + "/" + y + " " + t + ":" + mi;
 
   var ipArray = {};
   $.get("https://ipapi.co/json", function (data, status) {
@@ -53,9 +54,7 @@ function visitorInfo() {
     ipArray["region"] = data.region;
     ipArray["currentTime"] = currentTime;
     ipArray["version"] = "V.main";
-    //  console.log(data);
     connectDB(ipArray);
-    //console.log(current);
   });
 }
 
