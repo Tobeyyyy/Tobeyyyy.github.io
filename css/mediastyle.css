@@ -1,218 +1,218 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	
-} 
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-} 
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	
-} 
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	
-} 
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	
 }
 
 @media only screen and (max-width: 600px) {
-
-.intro-right {
+  .intro-right {
     width: 100%;
     position: absolute;
-}
+  }
 
-.intro-left{
+  .intro-left {
     width: 100%;
-	height: 50vh;
-}
+    height: 50vh;
+  }
 
- .intro-left div {
-     width: 70%;
-     float: right;
- }
-.intro-right img {
+  .intro-left div {
+    width: 70%;
+    float: right;
+  }
+  .intro-right img {
     min-height: 300px;
-	width: 100%;
-	max-width: 450px;
-}
+    width: 100%;
+    max-width: 450px;
+  }
 
-.intro-text {
+  .intro-text {
     position: relative;
     width: 55%;
     height: 100%;
     font-size: 12px;
     float: right;
-}
+  }
 
-section#home {
+  section#home {
     height: auto;
-}
+  }
 
-header {
+  header {
     display: none;
-}
+  }
 
-section#home {
+  section#home {
     width: 100%;
-}
-section#portfolio {
+  }
+  section#portfolio {
     height: auto !important;
-}
+  }
 
-.content-inner {
+  .content-inner {
     position: relative;
-}
+  }
 
-section#aboutme {
+  section#aboutme {
     height: 100%;
     position: initial;
-}
-/******header******/
-	.navigation-mobile-inner {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-	img#cover, .nagivation{
-		display:none;
-	}
-	.navigation-mobile-menu, .navigation-mobile-logo {
-		    width: 50px;
+  }
+  /******header******/
+  .navigation-mobile-inner {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-	}
-	.navigation-mobile {
-		display: inline-block;
-		width: 100%;
-		font-family: cursive;
-		border-bottom: inset;
-		border-color: rgba(255, 255, 255, 0.3);
-	}
+    display: block;
+  }
+  img#cover,
+  .nagivation {
+    display: none;
+  }
+  .navigation-mobile-menu,
+  .navigation-mobile-logo {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navigation-mobile {
+    display: inline-block;
+    width: 100%;
+    font-family: cursive;
+    border-bottom: inset;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
 
-.navigation-button-mobile {
+  .navigation-button-mobile {
     position: absolute;
     background-color: #030303;
     color: white;
     width: 100%;
-	display:none;
-}
-ul.nagivation-primary-mobile li a {
+    display: none;
+  }
+  ul.nagivation-primary-mobile li a {
     color: white;
     align-items: center;
-}
-ul.nagivation-primary-mobile li {
+  }
+  ul.nagivation-primary-mobile li {
     list-style-type: none;
     width: 120px;
     margin-left: auto;
     margin-right: auto;
     border: 1px white solid;
     border-radius: 50px;
-}
+  }
 
-ul.nagivation-primary-mobile {
+  ul.nagivation-primary-mobile {
     padding-left: 0;
-}
+  }
 
-.navigation-button-mobile {
+  .navigation-button-mobile {
     z-index: 3;
     width: 96%;
     margin-left: auto;
     margin-right: auto;
-}
-.navigation-mobile {
+  }
+  .navigation-mobile {
     position: fixed;
     z-index: 5;
-}
+  }
 
-.navigation-mobile-inner {
+  .navigation-mobile-inner {
     background-color: white;
-}
-ul.nagivation-primary-mobile li div {
+  }
+  ul.nagivation-primary-mobile li div {
     text-align: center;
-}
-/******end header******/
-/****** body******/
+  }
+  /******end header******/
+  /****** body******/
 
-	.navigation-inner, .intropart, .contact-info, .down-site-content, .content-inner{
-		max-width: 100%;
-		margin-left: none;
-		margin-right: none;
-	}
-	.myname {
-		font-size: 40px;
-		display: block;
-	}
-	.left-content, .right-content {
-		width: 100%;
-	}
-	.content-inner {
-		display: grid;
-	}
-	img.profile-image {
-		width: 200px;
-		height: 200px;
-	}
-	.portfolio-content {
-		display: block;
-		padding: 0px !important;
-	}
-	.portfolio-project {
-		width: 90% !important;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	h1 {
-		font-size: 35px;
-		margin-bottom: 10px;
-	}
-	section#portfolio {
-		height: auto;
-	}
-	#home div.little-section-inner {
-		height: 350px;
-	}
-	#aboutme div.left-content div.little-section-inner {
-		height: 250px;
-	}
-	section#portfolio, #portfolio div.little-section-inner {
-		height: 1600px;
-	}
-/******end body******/
+  .navigation-inner,
+  .intropart,
+  .contact-info,
+  .down-site-content,
+  .content-inner {
+    max-width: 100%;
+    margin-left: none;
+    margin-right: none;
+  }
+  .myname {
+    font-size: 40px;
+    display: block;
+  }
+  .left-content,
+  .right-content {
+    width: 100%;
+  }
+  .content-inner {
+    display: grid;
+  }
+  img.profile-image {
+    width: 200px;
+    height: 200px;
+  }
+  .portfolio-content {
+    display: block;
+    padding: 0px !important;
+  }
+  .portfolio-project {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  section#portfolio {
+    height: auto;
+  }
+  #home div.little-section-inner {
+    height: 350px;
+  }
+  #aboutme div.left-content div.little-section-inner {
+    height: 250px;
+  }
+  section#portfolio,
+  #portfolio div.little-section-inner {
+    height: 1600px;
+  }
+  /******end body******/
 
-/******footer******/
-	footer {
-
-		background-color: black;
-		height: 120px;
-	}
-	footer div.content-inner {
-		height: 40px;
-	}
-	ul.footer-left {
-		padding-left: 0px;
-		text-align: center;
-	}
-	footer li {
-		margin-right: 8px;
-		margin-left: 8px;
-	}
-	li {
-		margin-top: 5px;
-	}
-	.content-inner ul {
-		margin-left: auto;
-		margin-right: auto;
-	}
-/******end footer******/
-
+  /******footer******/
+  footer {
+    background-color: black;
+    height: 200px;
+  }
+  footer div.content-inner {
+    height: 40px;
+  }
+  ul.footer-left {
+    padding-left: 0px;
+    text-align: center;
+  }
+  footer li {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  li {
+    margin-top: 5px;
+  }
+  .content-inner ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /******end footer******/
 }
